@@ -154,7 +154,7 @@ const Navbar = () => {
 
 const Logo = () => (
   <Link href='/'>
-    <a className='navbar__logo'>
+    <a className='navbar__logo' aria-label='Papa Dubis logo'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         width='100%'

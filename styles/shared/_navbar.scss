@@ -11,7 +11,7 @@ $logo-size: 3rem;
 
   &__skipcontent {
     position: absolute;
-    // transform: translateY(-120%);
+    transform: translateY(-120%);
     @include button-size(0.85rem);
     background-color: $brand-secondary-100;
     color: $brand-secondary-200;
