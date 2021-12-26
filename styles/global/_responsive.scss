@@ -1,0 +1,60 @@
+.responsive-width {
+  width: 90%;
+  margin: auto;
+
+  @include media('>lg') {
+    max-width: 65%;
+    // width: clamp(44rem, 30vw, 80rem);
+  }
+
+  @include media('>3xl') {
+    max-width: 80rem;
+  }
+}
+
+.responsive-width-half {
+  width: 90%;
+  margin: auto;
+  @include media('>lg') {
+    width: 75%;
+  }
+  @include media('>xl') {
+    width: 60%;
+  }
+  @include media('>3xl') {
+    max-width: 100rem;
+  }
+}
+
+.responsive-width-form {
+  width: clamp(1rem, 90vw, 40rem);
+  margin: auto;
+}
+
+.responsive-width-cta {
+  width: clamp(1rem, 90vw, 50rem);
+  margin: auto;
+}
+
+.responsive-width-projects {
+  width: clamp(1rem, 90vw, 40rem);
+  margin: auto;
+}
+
+.responsive-width-contact {
+  width: 90%;
+  margin: auto;
+
+  @include media('>=md') {
+    width: 45rem;
+  }
+
+  @include media('>lg') {
+    width: fit-content;
+  }
+}
+
+.responsive-width-footer {
+  width: fit-content;
+  margin: auto;
+}

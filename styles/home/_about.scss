@@ -1,0 +1,42 @@
+.aboutgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: clamp(1rem, 8vw, 7rem);
+}
+
+.about {
+  &__image {
+    overflow: hidden;
+    border-radius: $border-radius;
+    height: fit-content;
+  }
+
+  &__body {
+    font-size: clamp(1rem, 5vw, 1.25rem);
+    color: $grayscale-600;
+  }
+
+  &__bodygrid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__downloadicon svg {
+    fill: white;
+    height: 2rem;
+  }
+
+  &__download {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include button-size(1rem);
+    background-color: $brand-primary;
+    max-width: 14.75rem;
+    border-radius: $border-radius;
+    color: $grayscale-100;
+    cursor: pointer;
+    font-weight: 500;
+  }
+}

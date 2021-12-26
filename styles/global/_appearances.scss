@@ -1,0 +1,62 @@
+$font-family: 'Inter';
+$box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+$box-shadow-100: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$button-hover: rgba(
+  $color: $brand-primary,
+  $alpha: 0.85,
+);
+
+$button-hover-primary: rgba(
+  $color: $brand-primary,
+  $alpha: 0.95,
+);
+
+$button-hover-secondary: rgba(
+  $color: $brand-secondary-200,
+  $alpha: 0.95,
+);
+
+$button-hover-cta: rgba(
+  $color: $brand-secondary-100,
+  $alpha: 0.3,
+);
+
+$border-radius: 0.5rem;
+$text-lineheight-100: 1.6;
+
+@mixin box-shadow-glow($color) {
+  box-shadow: 0 4px 14px 0 $color;
+}
+
+@mixin input-size($size) {
+  padding: ($size * 0.5) $size;
+  font-size: $size;
+}
+
+@mixin height-svg($small, $medium, $large, $xl) {
+  height: $small;
+
+  @include media('>=md') {
+    height: $medium;
+  }
+
+  @include media('>lg') {
+    height: $large;
+  }
+
+  @include media('>xl') {
+    height: $xl;
+  }
+}
+$top-padding-multi: 0.8;
+
+@mixin button-size($size) {
+  padding: ($size * $top-padding-multi) ($size * 1.5);
+  font-size: $size;
+}
+
+@mixin button-size-alt($size, $border, $color) {
+  padding: (($size * $top-padding-multi) - ($border)) (($size * 1.5));
+  font-size: $size;
+  border: $border solid $color;
+}

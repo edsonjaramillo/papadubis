@@ -1,0 +1,15 @@
+@import './global/colors';
+@import './global/breakpoints';
+@import './global/appearances';
+@import './global/reset';
+@import './global/responsive';
+
+@import './shared/navbar';
+@import './shared/footer';
+@import './shared/section';
+@import './shared/legal';
+
+@import './home/cta';
+@import './home/about';
+
+@import './contact/form';
