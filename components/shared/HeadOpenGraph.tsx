@@ -24,11 +24,11 @@ const HeadOpenGraph = ({
   children,
 }: HeadOpenGraphProps) => {
   const { asPath } = useRouter();
-  const url = 'https://edson-portfolio.vercel.app/';
+  const url = 'https://papadubis.vercel.app/';
 
   return (
     <Head>
-      <title>{`${title} | Portfolio`}</title>
+      <title>{`${title} | Papa Dubis`}</title>
       <meta name='description' content={description} />
       <meta property='og:url' content={url} />
       <meta property='og:type' content={ogType} />
@@ -44,7 +44,7 @@ const HeadOpenGraph = ({
       <meta name='twitter:image' content={image} />
       <meta name='twitter:image:alt' content={alt} />
       <link rel='canonical' href={url + asPath} />
-      <meta name='theme-color' content='#172c4b' />
+      <meta name='theme-color' content='#1A1A1A' />
       <meta name='robots' content={robots} />
       {children}
     </Head>

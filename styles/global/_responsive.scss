@@ -2,8 +2,8 @@
   width: 90%;
   margin: auto;
 
-  @include media('>lg') {
-    max-width: 65%;
+  @include media('>2xl') {
+    max-width: 70%;
     // width: clamp(44rem, 30vw, 80rem);
   }
 

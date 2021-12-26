@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://website.vercel.app',
+  siteUrl: 'https://papadubis.vercel.app/',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [

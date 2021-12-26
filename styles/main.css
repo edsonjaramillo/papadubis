@@ -77,9 +77,9 @@ a {
   margin: auto;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1644px) {
   .responsive-width {
-    max-width: 65%;
+    max-width: 70%;
   }
 }
 
@@ -256,7 +256,6 @@ a {
 .navbar__spacer {
   height: 6.7rem;
   width: 100%;
-  background-color: red;
 }
 
 .navbar__bg {
