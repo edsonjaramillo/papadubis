@@ -10,36 +10,36 @@
   justify-content: center;
   position: relative;
 
-  &::before {
-    content: 'CAJUN DONE RIGHT';
-    // background-repeat: repeat;
-    opacity: 0.15;
-    font-size: clamp(6rem, 14vw, 20rem);
-    width: max-content;
-    overflow: hidden;
-    color: $brand-secondary-200;
-    font-weight: 700;
-    position: absolute;
-    margin: 0rem -65rem;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  }
+  // &::before {
+  //   content: 'CAJUN DONE RIGHT';
+  //   // background-repeat: repeat;
+  //   opacity: 0.15;
+  //   font-size: clamp(6rem, 14vw, 20rem);
+  //   // width: max-content;
+  //   overflow: hidden;
+  //   color: $brand-secondary-200;
+  //   font-weight: 700;
+  //   position: fixed;
+  //   margin: 0rem -65rem;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: -1;
+  // }
 
-  &::after {
-    content: 'CAJUN DONE RIGHT';
-    opacity: 0.15;
-    font-size: clamp(6rem, 14vw, 20rem);
-    color: $brand-secondary-100;
-    width: max-content;
-    overflow: hidden;
-    font-weight: 700;
-    position: absolute;
-    margin: 0rem -65rem;
-    top: calc(0vh);
-    right: 0;
-    z-index: -1;
-  }
+  // &::after {
+  //   content: 'CAJUN DONE RIGHT';
+  //   opacity: 0.15;
+  //   font-size: clamp(6rem, 14vw, 20rem);
+  //   color: $brand-secondary-100;
+  //   // width: max-content;
+  //   overflow: hidden;
+  //   font-weight: 700;
+  //   position: fixed;
+  //   margin: 0rem -65rem;
+  //   top: calc(0vh);
+  //   right: 0;
+  //   z-index: -1;
+  // }
 
   &__grid {
     display: grid;

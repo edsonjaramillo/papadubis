@@ -270,6 +270,11 @@ a {
   color: #ffffff;
   padding: 0.5rem 1rem;
   white-space: nowrap;
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar__category:last-child {
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -612,40 +617,6 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-}
-
-.cta::before {
-  content: 'CAJUN DONE RIGHT';
-  opacity: 0.15;
-  font-size: clamp(6rem, 14vw, 20rem);
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  overflow: hidden;
-  color: #873398;
-  font-weight: 700;
-  position: absolute;
-  margin: 0rem -65rem;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.cta::after {
-  content: 'CAJUN DONE RIGHT';
-  opacity: 0.15;
-  font-size: clamp(6rem, 14vw, 20rem);
-  color: #fdd023;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  overflow: hidden;
-  font-weight: 700;
-  position: absolute;
-  margin: 0rem -65rem;
-  top: calc(0vh);
-  right: 0;
-  z-index: -1;
 }
 
 .cta__grid {

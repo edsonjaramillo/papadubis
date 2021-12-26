@@ -25,40 +25,8 @@ export const navbarLinks = [
 
 const categories = [
   {
-    name: 'Appetizers',
-    route: '/menu/appetizers',
-  },
-  {
-    name: 'Cajun Samplers',
-    route: '/menu/samplers',
-  },
-  {
-    name: 'Baskets',
-    route: '/menu/baskets',
-  },
-  {
-    name: 'Steaks & Stuff',
-    route: '/menu/steakstuff',
-  },
-  {
-    name: 'Pastas',
-    route: '/menu/appetizers',
-  },
-  {
-    name: 'Sides',
-    route: '/menu/sides',
-  },
-  {
-    name: 'Po Boys',
-    route: '/menu/baskets',
-  },
-  {
-    name: 'Cajun Dishes',
-    route: '/menu/baskets',
-  },
-  {
-    name: 'Desserts',
-    route: '/menu/desserts',
+    name: 'Burgers',
+    route: '/menu/category/burgers',
   },
 ];
 
