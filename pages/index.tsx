@@ -4,7 +4,7 @@ import { HeadOpenGraph, CTA, Section } from '@/components/index';
 const HomePage = () => {
   return (
     <>
-      <HeadOpenGraph title='YOOOO' description='desc' image='ffdsf' alt='fdsf' />
+      <HeadOpenGraph title='Home' description='desc' image='ffdsf' alt='fdsf' />
       <CTA />
       <Section
         header='Featured Items'

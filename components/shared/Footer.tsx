@@ -52,7 +52,6 @@ const Footer = () => {
           </div>
           <div className='footer__socialgrid'>
             <FacebookIcon />
-            <TwitterIcon />
             <InstagramIcon />
           </div>
           <small className='footer__copyright'>
