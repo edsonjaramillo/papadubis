@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { formatPrice, SliderProductProps } from '@/lib/graphcms';
+import { formatPrice, LogoBlur, SliderProductProps } from '@/lib/graphcms';
 import SwiperCore, { FreeMode, Navigation, SwiperOptions } from 'swiper';
 SwiperCore.use([Navigation, FreeMode]);
 
@@ -35,7 +35,7 @@ const SliderProducts = ({
         freeMode={true}
         navigation={true}
         breakpoints={breakpoint}>
-        {productList.map(({ id, title, slug, image, imageDescription, price, blur }) => (
+        {productList.map(({ id, title, slug, image, imageDescription, price }) => (
           <SwiperSlide key={id}>
             <Link href={`/menu/${slug}`}>
               <a title={title}>
@@ -47,7 +47,7 @@ const SliderProducts = ({
                       width={128}
                       height={128}
                       placeholder='blur'
-                      blurDataURL={blur}
+                      blurDataURL={LogoBlur}
                       layout='responsive'
                     />
                   </div>

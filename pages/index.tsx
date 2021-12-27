@@ -1,12 +1,8 @@
 // import { HeadOpenGraph } from "../components/';
 import { HeadOpenGraph, CTA, Section, SliderProducts } from '@/components/index';
 import { GetStaticProps } from 'next';
-import {
-  graphCMSClient,
-  featuredProductsQuery,
-  SliderProductProps,
-  getPlaceholder,
-} from '@/lib/graphcms';
+import { graphCMSClient, featuredProductsQuery, SliderProductProps } from '@/lib/graphcms';
+import { getPlaiceholder } from 'plaiceholder';
 
 interface HomeProps {
   featured: SliderProductProps[];
@@ -29,8 +25,7 @@ const HomePage = ({ featured }: HomeProps) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  let { products: featured } = await graphCMSClient.request(featuredProductsQuery);
-  featured = await getPlaceholder(featured);
+  const { products: featured } = await graphCMSClient.request(featuredProductsQuery);
 
   return {
     props: { featured },

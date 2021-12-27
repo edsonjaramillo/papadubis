@@ -1,18 +1,19 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import {
   formatPrice,
-  getPlaceholder,
   graphCMSClient,
+  LogoBlur,
   ProductProps,
   productQuery,
   slugsQuery,
 } from '@/lib/graphcms';
-import Image from 'next/image';
 import { HeadOpenGraph, Section, SliderProducts } from '@/components/index';
 import { SwiperOptions } from 'swiper';
+import Image from 'next/image';
 
 interface ProductPageProps {
   product: ProductProps;
+  // product: any;
 }
 
 const recommendationBreakpoints: SwiperOptions['breakpoints'] = {
@@ -30,6 +31,7 @@ const recommendationBreakpoints: SwiperOptions['breakpoints'] = {
 const ProductPage = ({ product }: ProductPageProps) => {
   return (
     <>
+      {/* <pre>{JSON.stringify(product, null, 2)}</pre> */}
       <HeadOpenGraph
         title={product.title}
         description={product.description}
@@ -42,7 +44,7 @@ const ProductPage = ({ product }: ProductPageProps) => {
             src={product.image.url}
             alt={product.imageDescription}
             placeholder='blur'
-            blurDataURL={product.blur}
+            blurDataURL={LogoBlur}
             width='128'
             height='128'
             layout='responsive'
@@ -82,8 +84,7 @@ export const getStaticProps: GetStaticProps = async ({ params }: any) => {
     slug: params.slug,
   };
 
-  let { product } = await graphCMSClient.request(productQuery, variables);
-  product = await getPlaceholder(product);
+  const { product } = await graphCMSClient.request(productQuery, variables);
 
   return {
     props: { product },

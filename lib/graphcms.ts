@@ -1,5 +1,4 @@
 import { GraphQLClient, gql } from 'graphql-request';
-import { getPlaiceholder } from 'plaiceholder';
 
 // Client Object
 
@@ -76,7 +75,6 @@ export const productQuery = gql`
         }
         imageDescription
       }
-      blur?: string;
     }
   }
 `;
@@ -87,21 +85,8 @@ export const formatPrice = (price: number) => {
   return (price / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 };
 
-export const getPlaceholder = async (data: any) => {
-  const url =
-    process.env.NODE_ENV == 'production'
-      ? 'https://papadubis.vercel.app'
-      : 'http://localhost:3000';
-
-  const response = await fetch(`${url}/api/placeholder'`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(data),
-  });
-  return response.json();
-};
+export const LogoBlur =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAIAAAACUFjqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAy0lEQVQYlVWPPW6FMBCEfaDY3jdeO44RIhKyUiBEQffKWIgaOg7AASi4DXcj8nvkb7qZb6TZFeJbKaVt21JK8zyLvzrPs23boigY8M5VVdV13S9umsYANyJSmpQCAYTAfOHgvZaac+OmXhSAbOmB+75/dY4UkSIDGGMY7NgxIKUUb5yNY2ZiEBiw1jpmPPFHCAx+TlpC7oG11DHGa7uua8s5IkUgetzvx3G88LIsn/d7WZbe+eBDfI/DMPx7XQhxHMc0Teu67vv+k34BSzg7G2k6gsAAAAAASUVORK5CYII=';
 
 // Types
 
@@ -115,7 +100,7 @@ export interface SliderProductProps {
     url: string;
   };
   imageDescription: string;
-  blur?: string;
+  blur: string;
 }
 
 export interface CategorySliderProps {
@@ -135,5 +120,5 @@ export interface ProductProps {
   };
   imageDescription: string;
   recommendation: SliderProductProps[];
-  blur?: string;
+  blur: string;
 }
