@@ -2,11 +2,14 @@ import '@/styles/main.css';
 import type { AppProps } from 'next/app';
 import { Navbar, Footer } from '@/components/index';
 import { ToastContainer } from 'react-toastify';
+import smoothscroll from 'smoothscroll-polyfill';
 import 'react-toastify/dist/ReactToastify.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+  smoothscroll.polyfill();
+
   return (
     <>
       <Navbar />

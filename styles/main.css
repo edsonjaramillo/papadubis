@@ -433,7 +433,7 @@ a {
 .section {
   padding: clamp(1.25rem, 4vw, 2.5rem) 0rem;
   position: relative;
-  scroll-margin-top: 4.5rem;
+  scroll-margin-top: clamp(1.25rem, 20vw, 5.5rem);
 }
 
 .section__contentgrid {
