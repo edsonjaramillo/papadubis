@@ -9,12 +9,13 @@ import 'swiper/css/navigation';
 import Script from 'next/script';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  <Script id='animation-polyfill' strategy='lazyOnload'>
-    {() => smoothscroll.polyfill()}
-  </Script>;
-
   return (
     <>
+      <Script
+        id='animation-polyfill'
+        strategy='lazyOnload'
+        onLoad={() => smoothscroll.polyfill()}
+      />
       <Navbar />
       <main id='main-content'>
         <Component {...pageProps} />
