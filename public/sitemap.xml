@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url><loc>https://papadubis.vercel.app</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.834Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/contact</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.834Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/privacy</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/terms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu/bacon-burger</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu/black-bean-vegan-burger</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu/french-fries</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu/chicken-tenders</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+<url><loc>https://papadubis.vercel.app/menu/vegan-loaded-baked-potato</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-27T20:25:32.835Z</lastmod></url>
+</urlset>

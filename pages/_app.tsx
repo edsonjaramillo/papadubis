@@ -6,9 +6,12 @@ import smoothscroll from 'smoothscroll-polyfill';
 import 'react-toastify/dist/ReactToastify.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import Script from 'next/script';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-  smoothscroll.polyfill();
+  <Script id='animation-polyfill' strategy='lazyOnload'>
+    {() => smoothscroll.polyfill()}
+  </Script>;
 
   return (
     <>
