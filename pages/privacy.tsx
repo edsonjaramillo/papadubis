@@ -14,7 +14,7 @@ const PrivacyPage = () => {
         name={`Papa Dubis`}
         email='contact@papadubis.com'
         phone='(256) 894-7878'
-        website='https://papadubis.vercel.app/'
+        website='https://papadubis.vercel.app'
       />
     </>
   );

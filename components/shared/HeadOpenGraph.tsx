@@ -24,7 +24,7 @@ const HeadOpenGraph = ({
   children,
 }: HeadOpenGraphProps) => {
   const { asPath } = useRouter();
-  const url = 'https://papadubis.vercel.app/';
+  const url = 'https://papadubis.vercel.app';
 
   return (
     <Head>

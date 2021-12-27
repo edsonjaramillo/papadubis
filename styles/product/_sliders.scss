@@ -1,0 +1,29 @@
+.sliderproduct {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  &__title {
+    color: black;
+    font-size: clamp(0.85rem, 3vw, 1.15rem);
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__image {
+    border-radius: $border-radius;
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__price {
+    font-size: clamp(0.85rem, 3vw, 1.15rem);
+    color: $grayscale-600;
+  }
+}
+
+.sliderproductgrid {
+  width: 100%;
+}

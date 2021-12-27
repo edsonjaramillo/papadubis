@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { motion, Variants } from 'framer-motion';
 import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 
 interface PageLink {
   route: string;
@@ -26,8 +25,48 @@ export const navbarLinks = [
 const categories = [
   {
     name: 'Burgers',
-    route: '/menu/category/burgers',
+    route: '/menu#burgers',
   },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  {
+    name: 'Burgers',
+    route: '/menu#burgers',
+  },
+  // {
+  //   name: 'Burgers',
+  //   route: '/menu#burgers',
+  // },
+  // {
+  //   name: 'Burgers',
+  //   route: '/menu#burgers',
+  // },
+  // {
+  //   name: 'Burgers',
+  //   route: '/menu#burgers',
+  // },
+  // {
+  //   name: 'Burgers',
+  //   route: '/menu#burgers',
+  // },
 ];
 
 const navVariants: Variants = {
@@ -77,7 +116,7 @@ const Navbar = () => {
   );
 
   const PageLink = ({ route, name }: PageLink) => (
-    <Link href={route}>
+    <Link href={route} shallow={true}>
       <a className='navbar__link' onClick={() => setIsOpen(false)}>
         {name}
       </a>
@@ -106,7 +145,7 @@ const Navbar = () => {
             </motion.div>
             <Hamburger />
           </div>
-          <nav aria-label='food categories' className='responsive-width-contact navbar__bg'>
+          <nav aria-label='food categories' className='navbar__bg responsive-width-category'>
             {categories.map((category, i) => (
               <a key={i} className='navbar__category' href={category.route}>
                 {category.name}

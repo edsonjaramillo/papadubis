@@ -3,6 +3,7 @@ export { default as Navbar } from '@/components/shared/Navbar';
 export { default as Section } from '@/components/shared/Section';
 export { default as Footer } from '@/components/shared/Footer';
 export { default as HeadOpenGraph } from '@/components/shared/HeadOpenGraph';
+export { default as SliderProducts } from '@/components/shared/SliderProducts';
 
 export { default as CTA } from '@/components/home/CTA';
 

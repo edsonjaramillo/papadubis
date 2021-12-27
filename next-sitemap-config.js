@@ -1,5 +1,6 @@
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://papadubis.vercel.app/',
+  siteUrl: 'https://papadubis.vercel.app',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [

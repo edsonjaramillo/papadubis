@@ -12,14 +12,19 @@
   }
 }
 
-.responsive-width-half {
+.responsive-width-product {
   width: 90%;
   margin: auto;
-  @include media('>lg') {
-    width: 75%;
+  @include media('>=md') {
+    width: 80%;
   }
-  @include media('>xl') {
-    width: 60%;
+
+  @include media('>lg') {
+    width: 65%;
+  }
+
+  @include media('>2xl') {
+    width: 50%;
   }
   @include media('>3xl') {
     max-width: 100rem;
@@ -41,16 +46,19 @@
   margin: auto;
 }
 
-.responsive-width-contact {
+.responsive-width-category {
   width: 90%;
   margin: auto;
 
   @include media('>=md') {
-    width: 45rem;
+    width: 80%;
   }
 
   @include media('>lg') {
-    width: fit-content;
+    width: 60%;
+  }
+  @include media('>3xl') {
+    max-width: 100rem;
   }
 }
 
