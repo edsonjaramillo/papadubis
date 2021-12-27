@@ -7,14 +7,14 @@ import {
   slugsQuery,
 } from '@/lib/graphcms';
 import Image from 'next/image';
-import Link from 'next/link';
 import { HeadOpenGraph, Section, SliderProducts } from '@/components/index';
+import { SwiperOptions } from 'swiper';
 
 interface ProductPageProps {
   product: ProductProps;
 }
 
-const recommendationBreakpoints = {
+const recommendationBreakpoints: SwiperOptions['breakpoints'] = {
   '640': {
     slidesPerView: 3,
   },

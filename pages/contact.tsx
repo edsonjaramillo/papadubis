@@ -59,8 +59,8 @@ const ContactPage = () => {
 
       <div className='contact'>
         <div className='contact__grid'>
-          <span className='contact__greeting'>GOT A QUESTION?</span>
-          <h1 className='contact__header'>Contact Me</h1>
+          {/* <span className='contact__greeting'>GOT A QUESTION?</span> */}
+          <h1 className='contact__header'>Contact Us</h1>
           <span className='contact__subheader'>
             I hope to help and answer any questions you might have. I look forward to hearing
             from you.

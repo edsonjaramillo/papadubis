@@ -2,11 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { formatPrice, SliderProductProps } from '@/lib/graphcms';
-
-// import Swiper core and required modules
 import SwiperCore, { FreeMode, Navigation, SwiperOptions } from 'swiper';
-
-// install Swiper modules
 SwiperCore.use([Navigation, FreeMode]);
 
 interface SliderComponentProps {
@@ -35,7 +31,7 @@ const SliderProducts = ({
       <Swiper
         className='sliderproductgrid'
         slidesPerView={3}
-        spaceBetween={15}
+        spaceBetween={20}
         freeMode={true}
         navigation={true}
         breakpoints={breakpoint}>

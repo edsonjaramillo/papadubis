@@ -16,3 +16,12 @@
 
 @import './product/sliders';
 @import './product/product';
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  margin-top: -2.5rem !important;
+  //   background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: $border-radius !important;
+  //   opacity: ;
+}

@@ -264,8 +264,9 @@ a {
 }
 
 .navbar__spacer {
-  height: 6.2rem;
+  height: 6.7rem;
   width: 100%;
+  background-color: red;
 }
 
 .navbar__bg {
@@ -276,6 +277,7 @@ a {
   display: flex;
   margin: 0 auto;
   overflow: auto;
+  margin-top: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1139,4 +1141,11 @@ a {
 .product__image {
   border-radius: 0.5rem;
   overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: black !important;
+  margin-top: -2.5rem !important;
+  border-radius: 0.5rem !important;
 }

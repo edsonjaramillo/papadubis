@@ -19,7 +19,7 @@ const MenuPage = ({ categories }: MenuPageProps) => {
           id={slug}
           header={title}
           textcolor='section--text--secondary-200'
-          color={i % 2 == 0 ? 'section--bg--grayscale-200' : 'section--bg--grayscale-100'}>
+          color={i % 2 == 0 ? 'section--bg--grayscale-100' : 'section--bg--grayscale-200'}>
           <SliderProducts productList={products} />
         </Section>
       ))}

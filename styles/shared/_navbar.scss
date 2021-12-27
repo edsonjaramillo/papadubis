@@ -91,10 +91,10 @@ $logo-size: 3rem;
   }
 
   &__spacer {
-    height: 6.2rem;
+    height: 6.7rem;
     width: 100%;
     // background-color: $brand-primary;
-    // background-color: red;
+    background-color: red;
   }
 
   &__bg {
@@ -103,6 +103,7 @@ $logo-size: 3rem;
     display: flex;
     margin: 0 auto;
     overflow: auto;
+    margin-top: 0.5rem;
     // border: 1px solid red;
     // width: 90%;
     // max-width: 40.5rem;

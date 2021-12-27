@@ -10,7 +10,7 @@ export const graphCMSClient = new GraphQLClient(
 
 export const featuredProductsQuery = gql`
   query GetFeaturedProducts {
-    products(where: { featured: true }) {
+    products(where: { featured: true }, orderBy: title_ASC) {
       id
       slug
       title
@@ -26,11 +26,11 @@ export const featuredProductsQuery = gql`
 
 export const categoriesQuery = gql`
   query GetCategories {
-    categories {
+    categories(orderBy: title_ASC) {
       id
       title
       slug
-      products {
+      products(orderBy: price_ASC) {
         id
         slug
         title

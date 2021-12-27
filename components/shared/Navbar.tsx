@@ -28,45 +28,13 @@ const categories = [
     route: '/menu#burgers',
   },
   {
-    name: 'Burgers',
-    route: '/menu#burgers',
+    name: 'Chicken',
+    route: '/menu#chicken',
   },
   {
-    name: 'Burgers',
-    route: '/menu#burgers',
+    name: 'Sides',
+    route: '/menu#sides',
   },
-  {
-    name: 'Burgers',
-    route: '/menu#burgers',
-  },
-  {
-    name: 'Burgers',
-    route: '/menu#burgers',
-  },
-  {
-    name: 'Burgers',
-    route: '/menu#burgers',
-  },
-  {
-    name: 'Burgers',
-    route: '/menu#burgers',
-  },
-  // {
-  //   name: 'Burgers',
-  //   route: '/menu#burgers',
-  // },
-  // {
-  //   name: 'Burgers',
-  //   route: '/menu#burgers',
-  // },
-  // {
-  //   name: 'Burgers',
-  //   route: '/menu#burgers',
-  // },
-  // {
-  //   name: 'Burgers',
-  //   route: '/menu#burgers',
-  // },
 ];
 
 const navVariants: Variants = {
