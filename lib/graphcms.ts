@@ -88,7 +88,12 @@ export const formatPrice = (price: number) => {
 };
 
 export const getPlaceholder = async (data: any) => {
-  const response = await fetch('http://localhost:3000/api/placeholder', {
+  const url =
+    process.env.NODE_ENV == 'production'
+      ? 'https://papadubis.vercel.app'
+      : 'http://localhost:3000';
+
+  const response = await fetch(`${url}/api/placeholder'`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
