@@ -41,6 +41,8 @@ const ProductPage = ({ product }: ProductPageProps) => {
           <Image
             src={product.image.url}
             alt={product.imageDescription}
+            placeholder='blur'
+            blurDataURL={product.blur}
             width='128'
             height='128'
             layout='responsive'
