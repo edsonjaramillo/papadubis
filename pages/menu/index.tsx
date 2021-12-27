@@ -1,4 +1,9 @@
-import { graphCMSClient, categoriesQuery, CategorySliderProps } from '@/lib/graphcms';
+import {
+  graphCMSClient,
+  categoriesQuery,
+  CategorySliderProps,
+  getPlaceholder,
+} from '@/lib/graphcms';
 import { GetStaticProps } from 'next';
 import { SliderProducts, Section, HeadOpenGraph } from '@/components/index';
 
@@ -28,7 +33,8 @@ const MenuPage = ({ categories }: MenuPageProps) => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const { categories } = await graphCMSClient.request(categoriesQuery);
+  let { categories } = await graphCMSClient.request(categoriesQuery);
+  categories = await getPlaceholder(categories);
 
   return {
     props: { categories },

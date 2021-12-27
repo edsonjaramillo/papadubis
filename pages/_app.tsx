@@ -2,20 +2,13 @@ import '@/styles/main.css';
 import type { AppProps } from 'next/app';
 import { Navbar, Footer } from '@/components/index';
 import { ToastContainer } from 'react-toastify';
-import smoothscroll from 'smoothscroll-polyfill';
 import 'react-toastify/dist/ReactToastify.css';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Script from 'next/script';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
-      <Script
-        id='animation-polyfill'
-        strategy='lazyOnload'
-        onLoad={() => smoothscroll.polyfill()}
-      />
       <Navbar />
       <main id='main-content'>
         <Component {...pageProps} />

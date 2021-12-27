@@ -35,7 +35,7 @@ const SliderProducts = ({
         freeMode={true}
         navigation={true}
         breakpoints={breakpoint}>
-        {productList.map(({ id, title, slug, image, imageDescription, price }) => (
+        {productList.map(({ id, title, slug, image, imageDescription, price, blur }) => (
           <SwiperSlide key={id}>
             <Link href={`/menu/${slug}`}>
               <a title={title}>
@@ -46,6 +46,8 @@ const SliderProducts = ({
                       alt={imageDescription}
                       width={128}
                       height={128}
+                      placeholder='blur'
+                      blurDataURL={blur}
                       layout='responsive'
                     />
                   </div>

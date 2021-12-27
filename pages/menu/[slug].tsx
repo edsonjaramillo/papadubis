@@ -1,6 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import {
   formatPrice,
+  getPlaceholder,
   graphCMSClient,
   ProductProps,
   productQuery,
@@ -61,18 +62,6 @@ const ProductPage = ({ product }: ProductPageProps) => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ params }: any) => {
-  const variables = {
-    slug: params.slug,
-  };
-
-  const { product } = await graphCMSClient.request(productQuery, variables);
-
-  return {
-    props: { product },
-  };
-};
-
 export const getStaticPaths: GetStaticPaths = async () => {
   const { products: slugs } = await graphCMSClient.request(slugsQuery);
 
@@ -83,6 +72,19 @@ export const getStaticPaths: GetStaticPaths = async () => {
   return {
     paths,
     fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }: any) => {
+  const variables = {
+    slug: params.slug,
+  };
+
+  let { product } = await graphCMSClient.request(productQuery, variables);
+  product = await getPlaceholder(product);
+
+  return {
+    props: { product },
   };
 };
 

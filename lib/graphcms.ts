@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request';
+import { getPlaiceholder } from 'plaiceholder';
 
 // Client Object
 
@@ -75,6 +76,7 @@ export const productQuery = gql`
         }
         imageDescription
       }
+      blur?: string;
     }
   }
 `;
@@ -83,6 +85,17 @@ export const productQuery = gql`
 
 export const formatPrice = (price: number) => {
   return (price / 100).toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+};
+
+export const getPlaceholder = async (data: any) => {
+  const response = await fetch('http://localhost:3000/api/placeholder', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data),
+  });
+  return response.json();
 };
 
 // Types
@@ -97,6 +110,7 @@ export interface SliderProductProps {
     url: string;
   };
   imageDescription: string;
+  blur?: string;
 }
 
 export interface CategorySliderProps {
@@ -116,4 +130,5 @@ export interface ProductProps {
   };
   imageDescription: string;
   recommendation: SliderProductProps[];
+  blur?: string;
 }
