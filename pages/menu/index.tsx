@@ -1,6 +1,6 @@
 import { graphCMSClient, categoriesQuery, CategorySliderProps } from '@/lib/graphcms';
 import { GetStaticProps } from 'next';
-import { SliderProducts, Section, HeadOpenGraph } from '@/components/index';
+import { SliderProducts, Section, HeadOpenGraph, SpacerPadding } from '@/components/index';
 
 interface MenuPageProps {
   categories: CategorySliderProps[];
@@ -9,21 +9,19 @@ interface MenuPageProps {
 const MenuPage = ({ categories }: MenuPageProps) => {
   return (
     <>
-      <pre>{JSON.stringify(categories, null, 2)}</pre>
       <HeadOpenGraph title='Menu' description='desc' image='ffdsf' alt='fdsf' />
-      <div className='responsive-width'>
-        <h1 className='menu__header'>Menu</h1>
-      </div>
-      {categories.map(({ id, title, products, slug }, i) => (
-        <Section
-          key={id}
-          id={slug}
-          header={title}
-          textcolor='section--text--secondary-200'
-          color={i % 2 == 0 ? 'section--bg--grayscale-100' : 'section--bg--grayscale-200'}>
-          <SliderProducts productList={products} />
-        </Section>
-      ))}
+      <SpacerPadding>
+        {categories.map(({ id, title, products, slug }, i) => (
+          <Section
+            key={id}
+            id={slug}
+            header={title}
+            textcolor='section--text--secondary-200'
+            color={i % 2 == 0 ? 'section--bg--grayscale-100' : 'section--bg--grayscale-200'}>
+            <SliderProducts productList={products} />
+          </Section>
+        ))}
+      </SpacerPadding>
     </>
   );
 };

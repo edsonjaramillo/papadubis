@@ -44,6 +44,7 @@ const SliderProducts = ({
                     <Image
                       src={image.url}
                       alt={imageDescription}
+                      quality={20}
                       width={128}
                       height={128}
                       placeholder='blur'

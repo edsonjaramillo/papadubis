@@ -12,8 +12,8 @@ const TermsPage = () => {
       />
       <Terms
         name={`Papa Dubis`}
-        email='contact@papadubis.com'
-        phone='(256) 894-7878'
+        email='contact@buisness.com'
+        phone='(256) 123-4567'
         website='https://papadubis.vercel.app'
       />
     </>

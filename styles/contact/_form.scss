@@ -1,6 +1,6 @@
 .contact {
   background-color: $grayscale-100;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 
   &__grid {
     display: grid;
@@ -36,7 +36,6 @@
 .form {
   background-color: $grayscale-100;
   position: relative;
-  padding: 2rem 0rem;
 
   &__grid {
     display: grid;

@@ -7,7 +7,7 @@ import {
   productQuery,
   slugsQuery,
 } from '@/lib/graphcms';
-import { HeadOpenGraph, Section, SliderProducts } from '@/components/index';
+import { HeadOpenGraph, Section, SliderProducts, SpacerPadding } from '@/components/index';
 import { SwiperOptions } from 'swiper';
 import Image from 'next/image';
 
@@ -31,37 +31,39 @@ const recommendationBreakpoints: SwiperOptions['breakpoints'] = {
 const ProductPage = ({ product }: ProductPageProps) => {
   return (
     <>
-      {/* <pre>{JSON.stringify(product, null, 2)}</pre> */}
       <HeadOpenGraph
         title={product.title}
         description={product.description}
         image={product.image.url}
         alt={product.imageDescription}
       />
-      <div className='productgrid responsive-width-product'>
-        <div className='product__image'>
-          <Image
-            src={product.image.url}
-            alt={product.imageDescription}
-            placeholder='blur'
-            blurDataURL={LogoBlur}
-            width='128'
-            height='128'
-            layout='responsive'
+      <SpacerPadding>
+        <div className='productgrid responsive-width-product'>
+          <div className='product__image'>
+            <Image
+              src={product.image.url}
+              alt={product.imageDescription}
+              quality={30}
+              placeholder='blur'
+              blurDataURL={LogoBlur}
+              width='128'
+              height='128'
+              layout='responsive'
+            />
+          </div>
+          <div className='product'>
+            <h1 className='product__title'>{product.title}</h1>
+            <span className='product__price'>{formatPrice(product.price)}</span>
+            <p className='product__description'>{product.description}</p>
+          </div>
+        </div>
+        <Section width='responsive-width-product' header='Recommendations'>
+          <SliderProducts
+            productList={product.recommendation}
+            breakpoint={recommendationBreakpoints}
           />
-        </div>
-        <div className='product'>
-          <h1 className='product__title'>{product.title}</h1>
-          <span className='product__price'>{formatPrice(product.price)}</span>
-          <p className='product__description'>{product.description}</p>
-        </div>
-      </div>
-      <Section width='responsive-width-product' header='Recommendations'>
-        <SliderProducts
-          productList={product.recommendation}
-          breakpoint={recommendationBreakpoints}
-        />
-      </Section>
+        </Section>
+      </SpacerPadding>
     </>
   );
 };

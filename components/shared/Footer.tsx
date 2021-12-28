@@ -40,13 +40,13 @@ const Footer = () => {
             <FooterSection>
               <span className='footer__header'>Contact Details</span>
               <a aria-label='Phone Number' href='tel:2568947878' className='footer__link'>
-                (256) 894-7878
+                (256) 123-4567
               </a>
               <a
-                href='mailto:contact@papadubis.com'
+                href='mailto:contact@buisness.com'
                 className='footer__link'
                 aria-label='Email'>
-                contact@papadubis.com
+                contact@buisness.com
               </a>
             </FooterSection>
           </div>
