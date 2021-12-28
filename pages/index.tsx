@@ -10,7 +10,12 @@ interface HomeProps {
 const HomePage = ({ featured }: HomeProps) => {
   return (
     <>
-      <HeadOpenGraph title='Home' description='desc' image='ffdsf' alt='fdsf' />
+      <HeadOpenGraph
+        title='Home'
+        description='Papa Dubis is a cajun restaurant in Guntersville, Alabama'
+        image='https://media.graphcms.com/QLNIqHd3QUawDHqPKyp6'
+        alt='cover banner of Papa Dubis logo'
+      />
       <CTA />
       <Section
         header='Featured Food'

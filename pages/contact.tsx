@@ -53,9 +53,9 @@ const ContactPage = () => {
     <>
       <HeadOpenGraph
         title='Contact Us'
-        description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, corporis!'
-        image='https://via.placeholder.com/1200x630'
-        alt='Alt'
+        description='Papa Dubis is a cajun restaurant in Guntersville, Alabama'
+        image='https://media.graphcms.com/QLNIqHd3QUawDHqPKyp6'
+        alt='cover banner of Papa Dubis logo'
       />
       <SpacerPadding>
         <div className='contact'>

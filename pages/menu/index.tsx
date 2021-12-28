@@ -9,7 +9,12 @@ interface MenuPageProps {
 const MenuPage = ({ categories }: MenuPageProps) => {
   return (
     <>
-      <HeadOpenGraph title='Menu' description='desc' image='ffdsf' alt='fdsf' />
+      <HeadOpenGraph
+        title='Menu'
+        description='Papa Dubis is a cajun restaurant in Guntersville, Alabama'
+        image='https://media.graphcms.com/QLNIqHd3QUawDHqPKyp6'
+        alt='cover banner of Papa Dubis logo'
+      />
       <SpacerPadding>
         {categories.map(({ id, title, products, slug }, i) => (
           <Section

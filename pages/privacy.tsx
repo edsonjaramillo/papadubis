@@ -5,9 +5,9 @@ const PrivacyPage = () => {
     <>
       <HeadOpenGraph
         title='Privacy Policy'
-        description='fbjhsdbfjbsdgfdgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdfgdf'
-        image='https://via.placeholder.com/1200x630'
-        alt='Alt'
+        description='Papa Dubis is a cajun restaurant in Guntersville, Alabama'
+        image='https://media.graphcms.com/QLNIqHd3QUawDHqPKyp6'
+        alt='cover banner of Papa Dubis logo'
         robots='noindex, nofollow'
       />
       <PrivacyPolicy
