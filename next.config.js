@@ -4,6 +4,5 @@ module.exports = {
   images: {
     domains: ['media.graphcms.com'],
     formats: ['image/avif', 'image/webp'],
-    // formats: ['']
   },
 };
