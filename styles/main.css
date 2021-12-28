@@ -67,6 +67,10 @@ a {
   background: #383838;
 }
 
+::-webkit-scrollbar-corner {
+  background-color: #1a1a1a;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #383838 #1a1a1a;

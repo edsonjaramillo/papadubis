@@ -66,6 +66,10 @@ a {
   background: $brand-secondary-300;
 }
 
+::-webkit-scrollbar-corner {
+  background-color: $brand-primary;
+}
+
 * {
   scrollbar-width: thin;
   scrollbar-color: $brand-secondary-300 $brand-primary;
