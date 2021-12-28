@@ -12,10 +12,10 @@ export const navbarLinks = [
     route: '/menu',
     name: 'Menu',
   },
-  {
-    route: '/about',
-    name: 'About',
-  },
+  // {
+  //   route: '/about',
+  //   name: 'About',
+  // },
   {
     route: '/contact',
     name: 'Contact',
@@ -30,6 +30,10 @@ const categories = [
   {
     name: 'Chicken',
     route: '/menu#chicken',
+  },
+  {
+    name: 'Pastas',
+    route: '/menu#pastas',
   },
   {
     name: 'Sides',

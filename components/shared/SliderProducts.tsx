@@ -2,8 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { formatPrice, LogoBlur, SliderProductProps } from '@/lib/graphcms';
-import SwiperCore, { FreeMode, Navigation, SwiperOptions } from 'swiper';
-SwiperCore.use([Navigation, FreeMode]);
+import SwiperCore, { FreeMode, Navigation, SwiperOptions, Mousewheel } from 'swiper';
+SwiperCore.use([Navigation, FreeMode, Mousewheel]);
 
 interface SliderComponentProps {
   productList: SliderProductProps[];
@@ -32,7 +32,8 @@ const SliderProducts = ({
         className='sliderproductgrid'
         slidesPerView={3}
         spaceBetween={20}
-        freeMode={true}
+        // freeMode={true}
+        // mousewheel={true}
         navigation={true}
         breakpoints={breakpoint}>
         {productList.map(({ id, title, slug, image, imageDescription, price }) => (
