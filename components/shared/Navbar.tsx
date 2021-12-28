@@ -32,6 +32,10 @@ const categories = [
     route: '/menu#chicken',
   },
   {
+    name: 'Desserts',
+    route: '/menu#desserts',
+  },
+  {
     name: 'Pastas',
     route: '/menu#pastas',
   },
@@ -117,13 +121,13 @@ const Navbar = () => {
             </motion.div>
             <Hamburger />
           </div>
-          <nav aria-label='food categories' className='navbar__bg responsive-width-category'>
+          {/* <nav aria-label='food categories' className='navbar__bg responsive-width-category'>
             {categories.map((category, i) => (
               <a key={i} className='navbar__category' href={category.route}>
                 {category.name}
               </a>
             ))}
-          </nav>
+          </nav> */}
         </nav>
         <div arial-hidden='true' className='navbar__spacer' />
       </header>

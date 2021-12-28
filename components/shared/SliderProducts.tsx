@@ -12,13 +12,13 @@ interface SliderComponentProps {
 
 const defaultBreakpoints = {
   '640': {
-    slidesPerView: 4,
+    slidesPerView: 3,
   },
   '768': {
-    slidesPerView: 5,
+    slidesPerView: 4,
   },
   '1024': {
-    slidesPerView: 6,
+    slidesPerView: 5,
   },
 };
 
@@ -32,6 +32,7 @@ const SliderProducts = ({
         className='sliderproductgrid'
         slidesPerView={3}
         spaceBetween={20}
+        // loop={true}
         // freeMode={true}
         // mousewheel={true}
         navigation={true}
